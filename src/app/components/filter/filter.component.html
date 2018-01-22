@@ -1,0 +1,621 @@
+
+<div style="position:absolute;z-index:1;background:rgba(52,52,52,0.8);width:100%;height:100vh;">
+  <form action="">
+  <div class="row">
+    <div class="col-7"></div>
+    <!--<div class="col-5 filter-card" style="background:white;height:100vh;margin-left:-5px;overflow:auto">
+      <div class="row" style="padding:5% 0;border:2px solid gray;margin-left:-5%;background:white">
+       
+        <div class="col-2">
+          <a href="" style="color:black;text-decoration:none"><i class="fa fa-times" aria-hidden="true" style="font-size:2em"></i>
+          </a>
+          </div>
+          <div class="col-7" style="position:relative">
+            <input type="text" style="width:100%;border:2px solid #f5f5f5;border-radius:5px">
+            <span style="position:absolute;top:2%;left:85%"><i class="fa fa-location-arrow" aria-hidden="true" style="color:darkgray"></i></span>
+          </div>
+      </div>
+        <div class="row main-form" style="border-bottom:1px solid gray">
+    <div class="col-8" >
+      <label>Bedrooms</label>
+
+    </div>
+    <div class="col-4">
+            <select name="bedrooms" id="bedrooms">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+
+
+    <div class="col-8">
+      <label>Bathrooms</label>
+
+    </div>
+    <div class="col-4">
+            <select name="bathrooms" id="bathroom">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+
+    <div class="col-8">
+      <label>Built</label>
+
+    </div>
+    <div class="col-4">
+            <select name="bedrooms" id="bedrooms">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+
+<div class="col-8">
+      <label>Sq ft</label>
+
+    </div>
+    <div class="col-4">
+            <select name="bedrooms" id="bedrooms">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+  </div>
+
+  <div class="row" style="margin-top:3%;padding-bottom:3%;border-bottom:1px solid gray;cursor:pointer" (click)="typeToggle()">
+    <div class="col-10">
+      TYPE
+    </div>
+    <div class="col-2"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:1.5em" *ngIf="!type_toggle"></i>
+    <i class="fa fa-angle-up" aria-hidden="true" style="font-size:1.5em" *ngIf="type_toggle"></i>
+    </div>
+  </div>
+  <div class="row" style="margin:2%" *ngIf="type_toggle">
+    <div class="col-8">
+      <label>SINGLE FAMILY</label>
+    </div>
+    <div class="col-4">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+        <div class="col-8">
+      <label>TOWN HOUSE/CONDO</label>
+    </div>
+    <div class="col-4">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-8">
+      <label>MULTI-FAMILY</label>
+    </div>
+    <div class="col-4">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <div class="row" style="margin-top:3%;padding-bottom:3%;border-bottom:1px solid gray;cursor:pointer" (click)="featureToggle()">
+    <div class="col-10">
+      FEATURES
+    </div>
+    <div class="col-2"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:1.5em" *ngIf="!feature_toggle"></i>
+    <i class="fa fa-angle-up" aria-hidden="true" style="font-size:1.5em" *ngIf="feature_toggle"></i>
+    </div>
+  </div>
+  <div class="row" style="margin:2%" *ngIf="feature_toggle">
+    <div class="col-8">
+      <label>SECOND LIVING QUARTERS</label>
+    </div>
+    <div class="col-4">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+        <div class="col-8">
+      <label>POOL</label>
+    </div>
+    <div class="col-4">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-8">
+      <label>GARAGE</label>
+    </div>
+    <div class="col-4">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+  </div>
+
+
+
+<div class="row" style="margin-top:10px">
+  <h2>hello</h2>
+</div>
+
+    </div>-->
+    
+
+
+    <div class="col-5" id="slide" style="margin-top:10px">
+      <div class="card" style="margin:0;padding:0;margin-left:0px;border-radius:0px;background:rgba(52,52,52,0.8)">
+  <div class="card-header" style="background:white;margin-left:-10px;border-radius:0px;margin-top:-2px"> 
+
+      <div class="row" style="padding:0% 0;background:white">
+       
+        <div class="col-2">
+          <a  (click)="goHome()" style="color:black;text-decoration:none;cursor: pointer"><i class="fa fa-times" aria-hidden="true" style="font-size:2em"></i>
+          </a>
+          </div>
+          <div class="col-9" style="position:relative">
+            <input placeholder="Search for Location" #search autocomplete="off"  type="text"  class="form-control"  [formControl]="searchControl"  style="width:100%;border:2px solid #f5f5f5;border-radius:10px">
+            <span style="position:absolute;top:25%;left:85%"><i class="fa fa-location-arrow" aria-hidden="true" style="color:darkgray"></i></span>
+          </div>
+      </div>
+  </div>
+  <div class="card-body" style="overflow-x:hidden;height:450px;padding-top:0px">
+   
+        <div class="row main-form" style="border-bottom:1px solid gray;background:#fff;overflow-x:hidden;">
+    <div class="col-10" >
+      <label style="font-size:16px;font-weight:700">Bedrooms</label>
+
+    </div>
+    <div class="col-2">
+            <select name="bedrooms" id="bedrooms" style="border:0px">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+
+
+    <div class="col-10">
+      <label>Bathrooms</label>
+
+    </div>
+    <div class="col-2">
+            <select name="bathrooms" id="bathroom" style="border:0px">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+
+    <div class="col-10">
+      <label>Built</label>
+
+    </div>
+    <div class="col-2">
+            <select name="bedrooms" id="bedrooms" style="border:0px">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+
+<div class="col-10">
+      <label>Sq ft</label>
+
+    </div>
+    <div class="col-2">
+            <select name="bedrooms" id="bedrooms">
+        <option value="no min">no min</option>
+        <option value="2+">2+</option>
+        <option value="3+">3+</option>
+        <option value="4+">4+</option>
+        
+      </select>
+    </div>
+
+  </div>
+
+  <div class="row" style="background:#fff;PADDING-top:3%;padding-bottom:3%;border-bottom:1px solid gray;cursor:pointer" (click)="typeToggle()">
+    <div class="col-10">
+      TYPE
+    </div>
+    <div class="col-2"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:1.5em" *ngIf="!type_toggle"></i>
+    <i class="fa fa-angle-up" aria-hidden="true" style="font-size:1.5em" *ngIf="type_toggle"></i>
+    </div>
+  </div>
+  <div class="row" style="padding:2%;background:#fff" *ngIf="type_toggle">
+    <div class="col-10">
+      <label>SINGLE FAMILY</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+        <div class="col-10">
+      <label>TOWN HOUSE/CONDO</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-10">
+      <label>MULTI-FAMILY</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+  </div>
+
+
+
+  <div class="row" style="  background:#fff;padding-top:3%;padding-bottom:3%;border-bottom:1px solid gray;cursor:pointer" (click)="featureToggle()">
+    <div class="col-10"  style="background:#fff">
+      FEATURES
+    </div>
+    <div class="col-2"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:1.5em" *ngIf="!feature_toggle"></i>
+    <i class="fa fa-angle-up" aria-hidden="true" style="font-size:1.5em" *ngIf="feature_toggle"></i>
+    </div>
+  </div>
+  <div class="row" style="padding:2%;background:#fff" *ngIf="feature_toggle">
+    <div class="col-10">
+      <label>SECOND LIVING QUARTERS</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+        <div class="col-10">
+      <label>POOL</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-10">
+      <label>GARAGE</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+  </div>
+
+
+ 
+  <div class="row" style="margin-top:3%;padding-bottom:3%;border-bottom:1px solid darkgray;cursor:pointer;background:#F3F3F3">
+    <div class="col-12" style="color:#36A2F8;font-weight:bold;padding:5px 15px;">
+      FINANCING
+    </div>
+    
+  </div>
+<div class="row" style="background:#fff;padding:5%">
+
+
+   <div class="col-4">
+     Price
+   </div>
+   <div class="col-4">
+     <select name="" id="" style="border: 0px;outline: none">
+       <option value="no min">no min</option>
+       <option value="$100,00">$100,000</option>
+       <option value="$100,00">$150,000</option>
+       <option value="$100,00">$200,000</option>
+       <option value="$100,00">$250,000</option>
+       <option value="$100,00">$300,000</option>
+       
+     </select>
+   </div>
+   <div class="col-4">
+      <select name="" id="" style="border: 0px;outline: none">
+       <option value="no min">no min</option>
+       <option value="$100,00">$100,000</option>
+       <option value="$100,00">$150,000</option>
+       <option value="$100,00">$200,000</option>
+       <option value="$100,00" selected>$250,000</option>
+       <option value="$100,00">$300,000</option>
+       
+     </select>
+   </div>
+   
+ 
+</div>
+
+<div class="row" style="padding:5%;background:white">
+
+
+   <div class="col-4">
+     Payment
+   </div>
+   <div class="col-4">
+     <select name="" id="" style="border: 0px;outline: none">
+       <option value="no min">no min</option>
+       <option value="$100,00">$100,000</option>
+       <option value="$100,00">$150,000</option>
+       <option value="$100,00">$200,000</option>
+       <option value="$100,00">$250,000</option>
+       <option value="$100,00">$300,000</option>
+       
+     </select>
+   </div>
+   <div class="col-4">
+      <select name="" id="" style="border: 0px;outline: none">
+       <option value="no min">no min</option>
+       <option value="$100,00">$100,000</option>
+       <option value="$100,00">$150,000</option>
+       <option value="$100,00">$200,000</option>
+       <option value="$100,00" selected>$250,000</option>
+       <option value="$100,00">$300,000</option>
+       
+     </select>
+   </div>
+   
+ 
+</div>
+
+<div class="row" style="background:#fff;padding:5%">
+
+
+   <div class="col-6">
+     Down Payment
+   </div>
+   <div class="col-2">
+   </div>
+   <div class="col-4">
+      <select name="" id="" style="border: 0px;outline: none">
+       <option value="no min">no min</option>
+       <option value="$100,00">$100,000</option>
+       <option value="$100,00">$150,000</option>
+       <option value="$100,00">$200,000</option>
+       <option value="$100,00" selected>$250,000</option>
+       <option value="$100,00">$300,000</option>
+       
+     </select>
+   </div>
+   
+ 
+</div>
+<div style="background:#fff" class="row">
+  <div class="col-12">
+<span>Credit Score</span>
+<nouislider style="background:#fff" #slider [connect]="true" [min]="350" [max]="850" [step]="1" [(ngModel)]="someRange" [tooltips]="true" ></nouislider>
+</div>
+</div>
+      <div class="row" style="background:#fff;padding-top:3%;padding-bottom:3%;border-bottom:1px solid gray;border-top:1px solid  gray;cursor:pointer" (click)="occupancyToggle()">
+    <div class="col-11"  style="background:#fff">
+      OCCUPANCY
+    </div>
+    <div class="col-1"  style="background:#fff"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:1.5em" *ngIf="!occupancy_toggle"></i>
+    <i class="fa fa-angle-up" aria-hidden="true" style="font-size:2em" *ngIf="occupancy_toggle"></i>
+    </div>
+  </div>
+  <div class="row" style="padding:2%;background:#fff" *ngIf="occupancy_toggle">
+    <div class="col-10">
+      <label>I've owned a primary residence in the past 36 months.</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+        <div class="col-10">
+      <label>PRIMARY HOME</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-10">
+      <label>VACATION HOME</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-10">
+      <label>INVESTMENT</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+<div class="row" style="background:#fff;padding-top:3%;padding-top:3%;padding-bottom:3%;border-bottom:1px solid gray;border-top:1px solid  gray;cursor:pointer" (click)="militaryToggle()">
+    <div class="col-11" style="background:#fff">
+      MILITARY
+    </div>
+    <div class="col-1" style="background:#fff"><i class="fa fa-angle-down" aria-hidden="true" style="font-size:1.5em" *ngIf="!military_toggle"></i>
+    <i class="fa fa-angle-up" aria-hidden="true" style="font-size:2em" *ngIf="military_toggle"></i>
+    </div>
+  </div>
+  <div class="row" style="background:#fff;padding:2%"  *ngIf="military_toggle">
+    <div class="col-10"  style="background:#fff">
+      <label>First time using a VA loan?</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+        <div class="col-10">
+      <label>Active Duty</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+        <div class="col-10">
+      <label>Reserves</label>
+    </div>
+    <div class="col-2">
+      
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+    </div> 
+  <div class="card-footer" style="margin-left:-18px;background:white;padding:3%">
+    <div class="row">
+      <div class="col-4">
+        <button class="btn btn-danger btn-block" (click)="saveFilter()">SAVE</button>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-dark btn-block">FIND HOMES</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+
+  </form>
+</div>
+<!--<agm-map [latitude]="lat" [longitude]="lng">
+  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>-->

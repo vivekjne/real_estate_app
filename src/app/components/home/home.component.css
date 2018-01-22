@@ -1,0 +1,35 @@
+
+agm-map {
+  height: 100%;
+}
+
+*{
+  
+    padding: 0px;
+}
+
+.img-container >img{
+   
+   border-radius: 2px;
+}
+
+.img-text{
+  position:absolute;
+  bottom:5px;left:0px;
+  list-style-type: none;
+  color:#fff;
+  width: 100%;
+  padding: 0px 10px;
+  margin: 0;
+  background: rgba(52,52,52,0.6)
+}
+
+.img-text-left{
+  float: left;
+  padding:5px
+}
+
+.img-text-right{
+  float: right;
+  padding: 5px;
+}
