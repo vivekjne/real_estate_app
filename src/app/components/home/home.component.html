@@ -3,7 +3,18 @@
 <div class="row">
   <div class="col-md-7">
     <agm-map [latitude]="lat" [longitude]="lng">
-  <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  <agm-marker [latitude]="lat" [longitude]="lng">
+      
+    <agm-info-window>
+      <img src="assets/images/1.png" style="width:100px;float:left;padding:10px">
+      <div style="float:right">
+      <strong>$230,000</strong>
+      <p>2Br,3Ba,</p>
+      <p style="padding:0;margin:0">1,7222 Sqft</p>
+    </div>
+    </agm-info-window>
+    
+  </agm-marker>
 </agm-map>
   </div>
   <div class="col-md-5 img-container" style="overflow-y:scroll;height:100vh;overflow-x:hidden">
