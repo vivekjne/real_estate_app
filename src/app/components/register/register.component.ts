@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService,SocialUser } from "angular4-social-login";
+import { FacebookLoginProvider, GoogleLoginProvider } from "angular4-social-login";
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -9,9 +12,13 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class RegisterComponent implements OnInit {
   registerForm:FormGroup;
 submitted;
+user:SocialUser;
+loggedIn;
   constructor(
     formBuilder:FormBuilder,
-    public router:Router
+    public router:Router,
+    public authService:AuthService,
+  
   ) {
 
     this.registerForm = formBuilder.group({
@@ -23,6 +30,14 @@ submitted;
    }
 
   ngOnInit() {
+  this.authService.authState.subscribe((user) => {
+      this.user = user;
+      this.loggedIn = (user != null);
+      if(this.loggedIn){
+        localStorage.setItem('isLogged','true')
+        this.router.navigateByUrl('/');
+      }
+    });
   }
 
   register(){
@@ -32,5 +47,10 @@ submitted;
       localStorage.setItem('login',JSON.stringify(this.registerForm.value))
       this.router.navigateByUrl('/login')
     }
+  }
+
+    signInWithFB(): void {
+    event.preventDefault()
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
 }

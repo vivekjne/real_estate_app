@@ -26,6 +26,12 @@
       </div>
       <p style="color:red" *ngIf="submitted&&!registerForm.controls.password.valid">*Password must be 6 characters</p>
      
-      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
-      <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
+      <button class="btn btn-lg btn-default btn-block" type="submit">Sign Up</button>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="signInWithFB()"><i class="fa fa-facebook" aria-hidden="true"></i> Sign Up with Facebook</button>
+
+  
     </form>
+          <div class="col-md-4 offset-md-4">
+         
+         </div>

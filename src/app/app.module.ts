@@ -15,7 +15,9 @@ import { NouisliderModule } from 'ng2-nouislider';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FavoritesComponent } from './favorites/favorites.component';
-import { LocationService } from './location.service'
+import { LocationService } from './location.service';
+import { SocialLoginModule, AuthServiceConfig } from "angular4-social-login";
+import {  FacebookLoginProvider } from "angular4-social-login";
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'settings', component: SettingsComponent },
@@ -28,6 +30,16 @@ const appRoutes: Routes = [
   
   
 ];
+
+
+let config = new AuthServiceConfig([
+  
+  {
+    id: FacebookLoginProvider.PROVIDER_ID,
+    provider: new FacebookLoginProvider("212091769350302")
+  }
+]);
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +65,8 @@ const appRoutes: Routes = [
     ),
     NouisliderModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    SocialLoginModule.initialize(config)
   ],
   providers: [LocationService],
   bootstrap: [AppComponent]

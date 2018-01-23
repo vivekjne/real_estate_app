@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
+import { AuthService,SocialUser } from "angular4-social-login";
+import { FacebookLoginProvider, GoogleLoginProvider } from "angular4-social-login";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -8,12 +10,22 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 export class LoginComponent implements OnInit {
 email;
 password;
+loggedIn;
+user:SocialUser
   constructor(
-    public router:Router
+    public router:Router,
+    public authService:AuthService,
   ) { }
 
   ngOnInit() {
-    
+    this.authService.authState.subscribe((user) => {
+      this.user = user;
+      this.loggedIn = (user != null);
+      if(this.loggedIn){
+        localStorage.setItem('isLogged','true')
+        this.router.navigateByUrl('/');
+      }
+    });
   }
 
   login(){
@@ -26,6 +38,11 @@ password;
         }
     }
   
+  }
+
+   signInWithFB(): void {
+   event.preventDefault();
+    this.authService.signIn(FacebookLoginProvider.PROVIDER_ID);
   }
 
 }
